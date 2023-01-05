@@ -10,11 +10,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.entrainement'
+    namespace 'com.example.daricom'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.entrainement"
+        applicationId "com.example.daricom"
         minSdk 21
         targetSdk 33
         versionCode 1

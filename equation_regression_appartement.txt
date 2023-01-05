@@ -1,0 +1,5 @@
+A=[0.0, 11981.57268588179, 189188.96480528245, 492.7451974352732, -4399.072898557155, -415.9294148094125, -7055.696328457678, 157.98110206439185]
+B=70307.78517292827
+
+Equation:
+B + A[0] +A[1]*surface+A[2]*piece+A[3]*section + A[4]*surface*piece+A[5]*surface*section+A[6]*piece*section + A[7]*surface*piece*section

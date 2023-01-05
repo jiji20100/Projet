@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="SplashScreen.Theme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="SplashScreen.Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:splashScreenTheme">@drawable/estimmo_logo</item>
     </style>

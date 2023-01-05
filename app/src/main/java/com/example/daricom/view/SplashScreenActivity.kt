@@ -1,12 +1,10 @@
 package com.example.daricom.view
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.daricom.R
 import com.example.daricom.databinding.ActivitySplashScreenBinding
-
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

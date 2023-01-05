@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Dari.com</string>
+    <string name="app_name">ESTIMMO</string>
+    <string name="img_logoApp_splashScreen_">splash</string>
+    <string name="text_surfaceChoice_estimmoFragment" />
+    <string name="text_PiecesChoice_estimmoFragment" />
 </resources>

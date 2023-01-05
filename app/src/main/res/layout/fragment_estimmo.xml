@@ -7,48 +7,68 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hola" />
+        android:text="ESTIMMO"
+        android:textColor="@color/purple_700"
+        android:textSize="100px"
+        android:textAlignment="center"/>
+
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp" />
+        android:layout_height="20dp" />
+
     <EditText
         android:id="@+id/HomeSurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/text_surfaceChoice_estimmoFragment" />
+        android:hint="@string/hint_bienChoice_estimmoFragment" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="hello" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="12dp" />
+        android:layout_height="20dp" />
 
     <EditText
         android:id="@+id/HomePieces"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/text_PiecesChoice_estimmoFragment" />
+        android:hint="@string/hint_Surface_estimmoFragment" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp" />
-
-    <Button
+        android:layout_height="20dp" />
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#"
+        android:hint="@string/hint_nbPieces_estimmoFragment"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_terrainSurface_estimmoFragment"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
 
-        />
+    <Button
+        android:id="@+id/estimmoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_700"
+        android:background="@drawable/arrondir"
+        android:text="@string/hint_estimmer_estimmoFragment" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
+    <TextView
+        android:id="@+id/estimmoResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_estimationResult_estimmoFragment" />
 
 </LinearLayout>

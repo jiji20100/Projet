@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">ESTIMMO</string>
     <string name="img_logoApp_splashScreen_">splash</string>
-    <string name="text_surfaceChoice_estimmoFragment" />
-    <string name="text_PiecesChoice_estimmoFragment" />
+    <string name="hint_bienChoice_estimmoFragment">Appartement ou Maison</string>
+    <string name="hint_Surface_estimmoFragment">Surface</string>
+    <string name="hint_nbPieces_estimmoFragment">Nombre de pieces</string>
+    <string name="hint_terrainSurface_estimmoFragment">Surface Terrain</string>
+    <string name="hint_estimmer_estimmoFragment">Estimmer</string>
+    <string name="hint_estimationResult_estimmoFragment">Resultat d\'estimmation</string>
+
 </resources>

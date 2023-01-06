@@ -19,4 +19,8 @@ class EstimmoViewModel @Inject constructor(
     private val _estimmoResult: MutableLiveData<EstimmoResult> = state.getLiveData(STATE_KEY_RESULT, EstimmoResult.Empty)
     val estimmoResult: LiveData<EstimmoResult> = _estimmoResult
 
+    fun Esttimmo() {
+        _estimmoResult.value = EstimmoResult.Estimated(0)
+    }
+
 }

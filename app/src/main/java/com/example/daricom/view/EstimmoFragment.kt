@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.daricom.data.EstimmoResult
 import com.example.daricom.databinding.FragmentEstimmoBinding
 import com.example.daricom.viewModel.EstimmoViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -26,10 +27,28 @@ class EstimmoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val estimmoViewModel: EstimmoViewModel by viewModels()
 
+        binding.Appartement.setOnClickListener() {
+            binding.TerrainSurface.visibility = View.GONE
+        }
+        binding.Maison.setOnClickListener() {
+            binding.TerrainSurface.visibility = View.VISIBLE
+        }
         binding.estimmoButton.setOnClickListener(){
 
+
         }
-        estimmoViewModel.estimmoResult.observe(viewLifecycleOwner) {}
+        estimmoViewModel.estimmoResult.observe(viewLifecycleOwner) { value ->
+            when(value) {
+                is EstimmoResult.Empty -> {
+                    binding.estimmoResult.visibility = View.GONE
+                }
+                is EstimmoResult.Estimated -> {
+                    binding.estimmoResult.visibility = View.VISIBLE
+
+                }
+            }
+
+        }
 
 
 

@@ -28,10 +28,10 @@ class EstimmoFragment : Fragment() {
         val estimmoViewModel: EstimmoViewModel by viewModels()
 
         binding.Appartement.setOnClickListener() {
-            binding.TerrainSurface.visibility = View.GONE
+            binding.Terrain.visibility = View.GONE
         }
         binding.Maison.setOnClickListener() {
-            binding.TerrainSurface.visibility = View.VISIBLE
+            binding.Terrain.visibility = View.VISIBLE
         }
 
         binding.estimmoButton.setOnClickListener(){
@@ -46,14 +46,21 @@ class EstimmoFragment : Fragment() {
             when(value) {
                 is EstimmoResult.Empty -> {
                     binding.estimmoResult.visibility = View.GONE
+                    binding.devise.visibility = View.GONE
+                    binding.estimmoText.visibility = View.GONE
                 }
                 is EstimmoResult.Estimated -> {
                     binding.estimmoResult.visibility = View.VISIBLE
                     binding.estimmoResult.text = value.float.toString()
+                    binding.devise.visibility = View.VISIBLE
+                    binding.estimmoText.visibility = View.VISIBLE
+
                 }
                 is EstimmoResult.Failed -> {
                     binding.estimmoResult.visibility = View.VISIBLE
                     binding.estimmoResult.text = value.message
+                    binding.devise.visibility = View.GONE
+
                 }
             }
 

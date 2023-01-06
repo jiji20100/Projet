@@ -6,7 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp">
-
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -55,34 +57,82 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp" />
-
-    <EditText
-        android:id="@+id/Surface"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_Surface_estimmoFragment"
-        android:inputType="number"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Surface en m² ;"
+            android:textSize="18sp" />
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/Surface"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_Surface_estimmoFragment"
+            android:inputType="number" />
+    </LinearLayout>
+
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp" />
 
-    <EditText
-        android:id="@+id/HomePieces"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_nbPieces_estimmoFragment"
-        android:inputType="number"/>
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_de_pi_ces"
+            android:textSize="18sp" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/HomePieces"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nbPieces_estimmoFragment"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
-
-    <EditText
-        android:id="@+id/TerrainSurface"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/Terrain"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_terrainSurface_estimmoFragment"
-        android:inputType="number"/>
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Surface de Terrain :"
+            android:textSize="18sp" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/TerrainSurface"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_terrainSurface_estimmoFragment"
+            android:inputType="number" />
+
+    </LinearLayout>
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
@@ -96,12 +146,36 @@
         android:text="@string/hint_estimmer_estimmoFragment" />
     <Space
         android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:layout_height="80dp" />
 
-    <TextView
-        android:id="@+id/estimmoResult"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_estimationResult_estimmoFragment" />
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp">
+        <TextView
+            android:id="@+id/estimmoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estimation"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/estimmoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_resultatEstimmation_estimmoFragment"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/devise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/devise"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
 
 </LinearLayout>

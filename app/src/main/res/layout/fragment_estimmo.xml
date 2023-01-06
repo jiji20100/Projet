@@ -29,7 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/maison"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:checked="true"/>
         <Space
             android:layout_width="50dp"
             android:layout_height="match_parent"/>
@@ -55,12 +56,11 @@
         android:layout_width="match_parent"
         android:layout_height="20dp" />
 
-
     <EditText
-        android:id="@+id/HomeSurface"
+        android:id="@+id/Surface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_bienChoice_estimmoFragment"
+        android:hint="@string/hint_Surface_estimmoFragment"
         android:inputType="number"/>
 
     <Space
@@ -71,17 +71,8 @@
         android:id="@+id/HomePieces"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_Surface_estimmoFragment" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
-
-    <EditText
-        android:id="@+id/nbPieces"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_nbPieces_estimmoFragment"/>
+        android:hint="@string/hint_nbPieces_estimmoFragment"
+        android:inputType="number"/>
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"/>

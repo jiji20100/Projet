@@ -8,5 +8,8 @@ sealed interface EstimmoResult : Parcelable {
     object Empty : EstimmoResult
 
     @Parcelize
-    data class Estimated(val int: Int) : EstimmoResult
+    data class Estimated(val float: Float) : EstimmoResult
+
+    @Parcelize
+    data class Failed(val message: String) : EstimmoResult
 }

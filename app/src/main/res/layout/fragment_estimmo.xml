@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -19,12 +19,49 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/Maison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maison"
+            android:textSize="20sp"/>
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/Appartement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appartement"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <Spinner
+        android:id="@+id/Region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Region"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
 
     <EditText
         android:id="@+id/HomeSurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_bienChoice_estimmoFragment" />
+        android:hint="@string/hint_bienChoice_estimmoFragment"
+        android:inputType="number"/>
 
     <Space
         android:layout_width="match_parent"
@@ -39,17 +76,22 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp" />
+
     <EditText
+        android:id="@+id/nbPieces"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_nbPieces_estimmoFragment"/>
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
+
     <EditText
+        android:id="@+id/TerrainSurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_terrainSurface_estimmoFragment"/>
+        android:hint="@string/hint_terrainSurface_estimmoFragment"
+        android:inputType="number"/>
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp"/>

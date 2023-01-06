@@ -2,6 +2,9 @@ package com.example.daricom.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
+/**
+    * Data class for the result of the estimation of the price of a property
+ * */
 
 sealed interface EstimmoResult : Parcelable {
     @Parcelize

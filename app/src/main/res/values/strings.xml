@@ -9,6 +9,10 @@
     <string name="hint_estimationResult_estimmoFragment">Resultat d\'estimmation</string>
     <string name="maison">Maison</string>
     <string name="appartement">Appartement</string>
+    <string name="nombre_de_pi_ces">Nombre de pièces :</string>
+    <string name="estimation">Estimation :</string>
+    <string name="devise">€</string>
+    <string name="hint_resultatEstimmation_estimmoFragment">estimmation</string>
     <string-array name="Region">
         <item>AB</item>
         <item>AC</item>

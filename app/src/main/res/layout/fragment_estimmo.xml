@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ESTIMMO"
+        android:textColor="@color/purple_700"
+        android:textSize="100px"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/Maison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maison"
+            android:textSize="20sp"
+            android:checked="true"/>
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/Appartement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appartement"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <Spinner
+        android:id="@+id/Region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Region"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/Surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_Surface_estimmoFragment"
+        android:inputType="number"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/HomePieces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nbPieces_estimmoFragment"
+        android:inputType="number"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/TerrainSurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_terrainSurface_estimmoFragment"
+        android:inputType="number"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/estimmoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_700"
+        android:background="@drawable/arrondir"
+        android:text="@string/hint_estimmer_estimmoFragment" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/estimmoResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_estimationResult_estimmoFragment" />
+
+</LinearLayout>

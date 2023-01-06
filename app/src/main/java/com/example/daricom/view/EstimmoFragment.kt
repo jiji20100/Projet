@@ -33,9 +33,14 @@ class EstimmoFragment : Fragment() {
         binding.Maison.setOnClickListener() {
             binding.TerrainSurface.visibility = View.VISIBLE
         }
+
         binding.estimmoButton.setOnClickListener(){
-
-
+            val proprety = if (binding.Appartement.isChecked) "Appartement" else "Maison"
+            val section = binding.Region.selectedItem.toString()
+            val terrain = binding.TerrainSurface.text.toString().toFloatOrNull()
+            val surface = binding.Surface.text.toString().toFloatOrNull()
+            val piece = binding.HomePieces.text.toString().toIntOrNull()
+            estimmoViewModel.estimmo(proprety, section, terrain, surface, piece)
         }
         estimmoViewModel.estimmoResult.observe(viewLifecycleOwner) { value ->
             when(value) {
@@ -44,7 +49,11 @@ class EstimmoFragment : Fragment() {
                 }
                 is EstimmoResult.Estimated -> {
                     binding.estimmoResult.visibility = View.VISIBLE
-
+                    binding.estimmoResult.text = value.float.toString()
+                }
+                is EstimmoResult.Failed -> {
+                    binding.estimmoResult.visibility = View.VISIBLE
+                    binding.estimmoResult.text = value.message
                 }
             }
 

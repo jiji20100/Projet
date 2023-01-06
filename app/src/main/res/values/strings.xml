@@ -7,5 +7,40 @@
     <string name="hint_terrainSurface_estimmoFragment">Surface Terrain</string>
     <string name="hint_estimmer_estimmoFragment">Estimmer</string>
     <string name="hint_estimationResult_estimmoFragment">Resultat d\'estimmation</string>
+    <string name="maison">Maison</string>
+    <string name="appartement">Appartement</string>
+    <string-array name="Region">
+        <item>AB</item>
+        <item>AC</item>
+        <item>AD</item>
+        <item>AE</item>
+        <item>AI</item>
+        <item>AK</item>
+        <item>AO</item>
+        <item>AP</item>
+        <item>AR</item>
+        <item>AS</item>
+        <item>AT</item>
+        <item>AV</item>
+        <item>AW</item>
+        <item>AX</item>
+        <item>AY</item>
+        <item>AZ</item>
+        <item>BC</item>
+        <item>BD</item>
+        <item>BE</item>
+        <item>BH</item>
+        <item>BK</item>
+        <item>BL</item>
+        <item>BM</item>
+        <item>BN</item>
+        <item>BO</item>
+        <item>BP</item>
+        <item>BR</item>
+        <item>BS</item>
+        <item>BT</item>
+        <item>BV</item>
+        <item>BW</item>
+    </string-array>
 
 </resources>

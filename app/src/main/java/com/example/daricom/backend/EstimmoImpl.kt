@@ -2,6 +2,13 @@ package com.example.daricom.backend
 
 import com.example.daricom.data.EstimmoResult
 import javax.inject.Inject
+/** 
+ * estimmoMaisons : returns estimated price of a house based on its terrain, surface, section and number of rooms
+ * estimmoAppartements : returns estimated price of an apartment based on its surface, section and number of rooms
+ * convertSection : converts section to a number
+ * convertTerrain : converts terrain to a number
+ * */
+
 private val conversionTable = mapOf(
     "AB" to 0, "AC" to 1, "AD" to 2,
     "AE" to 3, "AI" to 4, "AK" to 5,

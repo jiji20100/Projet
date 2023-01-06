@@ -19,8 +19,17 @@ class EstimmoViewModel @Inject constructor(
     private val _estimmoResult: MutableLiveData<EstimmoResult> = state.getLiveData(STATE_KEY_RESULT, EstimmoResult.Empty)
     val estimmoResult: LiveData<EstimmoResult> = _estimmoResult
 
-    fun Esttimmo() {
-        _estimmoResult.value = EstimmoResult.Estimated(0)
+    fun estimmo(proprety : String, section : String, terrain : Float?, surface : Float?, piece : Int?) {
+        try {
+            if (surface != null && piece != null && (terrain != null || proprety == "Appartement")) {
+                _estimmoResult.value = EstimmoResult.Estimated(estimmoUtil.estimmo(proprety, section, terrain, surface, piece))
+            }
+            else {
+                throw IllegalArgumentException("Surface, piece et/ou terrain non renseigné")
+            }
+        }
+        catch (e:java.lang.IllegalArgumentException){
+            _estimmoResult.value = EstimmoResult.Failed(e.message.toString())
+        }
     }
-
 }
